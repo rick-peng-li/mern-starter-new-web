@@ -1,0 +1,33 @@
+{
+  "name": "mern-starter-new-web-server",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.js",
+    "start": "node src/index.js",
+    "build": "node -e \"console.log('server build: native ESM source, no transpilation required')\"",
+    "lint": "node -e \"console.log('server lint: no extra linter configured')\"",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb-memory-server": "^10.1.4",
+    "mongoose": "^8.16.0",
+    "multer": "^2.0.2",
+    "morgan": "^1.10.0",
+    "nanoid": "^5.1.5",
+    "slugify": "^1.6.6",
+    "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.1",
+    "tsx": "^4.20.3",
+    "vitest": "^3.2.4"
+  }
+}
